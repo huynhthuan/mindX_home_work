@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrap {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote {
+    width: 70%;
+    height: 90%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Quote body */
+
+.quote__body {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+.quote__content,
+.quote__image {
+    width: 50%;
+}
+
+.quote__content {
+    padding: 70px 100px;
+    background-image: url('./img/bg-trans.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+.quote__title {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.quote__icon--small img {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.quote__main {
+    padding-top: 20%;
+}
+
+.quote__icon--larger img {
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.quote__paragraph {
+    font-size: 27px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+.quote__author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.author__ava {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.author__ava img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.author__name {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.quote__image {
+    overflow: hidden;
+}
+
+.quote__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Quote Footer */
+.quote__footer {
+    background-color: #68476b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.quote__link {
+    width: 220px;
+    height: 40px;
+    display: block;
+    border-radius: 5px;
+    background: white;
+    color: #030303;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 40px;
+    text-align: center;
+}
+
+.quote__link:hover {
+    background-color: #413442;
+    color: white;
+}
+
+.qoutes__share {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.share__title {
+    font-size: 16px;
+    margin-right: 10px;
+    text-transform: uppercase;
+}
+
+.share__icons {
+    display: flex;
+    align-items: center;
+}
+
+.share__link {
+    margin: 0 10px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.share__link:hover {
+    background-color: white;
+    color: #68476b;
+}
+
+.quote__count {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.count__paragraph {
+    margin-left: 20px;
+}
+
+.count__icon {
+    width: 30px;
+    height: 30px;
+    color: #68476b;
+    background-image: url('./img/bg-heart.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.count__icon i {
+    position: relative;
+    top: 2px;
+}
