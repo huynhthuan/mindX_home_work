@@ -1,0 +1,200 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    color: #222222;
+}
+
+a {
+    text-decoration: none;
+    color: #222222;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Button */
+
+.button {
+    border-radius: 3px;
+    display: block;
+    padding: 0 26px;
+    height: 41px;
+    line-height: 37px;
+    border: 2px solid #5cb874;
+    color: #5cb874;
+}
+
+/* Block */
+
+.block {
+    max-width: 1296px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.block--fluid {
+    padding: 0;
+    max-width: 100%;
+}
+
+/* Navigation */
+
+.navigation {
+    padding: 26px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation__logo a {
+    font-size: 30px;
+    font-weight: bold;
+    color: #5cb874;
+}
+
+.navigation__menu,
+.navigation__content {
+    display: flex;
+    align-items: center;
+}
+
+.navigation__link {
+    display: block;
+    margin-right: 30px;
+}
+
+.navigation__link:hover,
+.navigation__link.active {
+    color: #5cb874;
+}
+
+.navigation__button:hover {
+    background-color: #5cb874;
+    color: white;
+}
+
+/* Slide */
+
+.block__slide {
+    position: relative;
+}
+
+.slide__item {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide__item::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #00000066;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.slide__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.slide__content {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.slide__content {
+    text-align: center;
+}
+
+.slide__title {
+    font-size: 40px;
+    line-height: 40px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+.slide__description {
+    color: white;
+    margin-bottom: 40px;
+    line-height: 24px;
+}
+
+.slide__button {
+    display: inline-block;
+    background-color: #5cb874;
+    color: white;
+}
+
+.slide__button:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.slide__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 2;
+    padding-bottom: 16px;
+}
+
+.slide__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: #b1b5b9;
+    margin: 0 3px;
+    display: block;
+}
+
+.slide__dot:hover,
+.slide__dot.active {
+    background-color: #5cb874;
+}
+
+/* Block Feature */
+
+.block__feature {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+.feature__item {
+    width: calc((100% - 150px) / 3);
+}
+
+.feature__title {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.feature__icon {
+    margin-bottom: 30px;
+}
